@@ -1,0 +1,373 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+header.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: #85572f;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+.logo img {
+  height: 150px !important;
+  width: auto !important;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  color: #f8e4c9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: #ffce7b;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 120px 60px 80px;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.hero-texto {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-texto h2 {
+  font-size: 2.5rem;
+  color: #3b2416;
+  margin-bottom: 20px;
+}
+
+.hero-texto span {
+  color: #f8e4c9;
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+}
+
+.hero-texto p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.hero-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-imagem img {
+  max-width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 3px solid #f8e4c9;
+  transition: transform 0.3s ease;
+}
+
+.hero-imagem img:hover {
+  transform: scale(1.02);
+}
+
+.botao {
+  display: inline-block;
+  background-color: #3b2416;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px solid #3b2416;
+}
+
+.botao:hover {
+  background-color: #2a1a10;
+  transform: translateY(-2px);
+}
+
+.destaque {
+  text-align: center;
+  padding: 40px 60px;
+  background: linear-gradient(135deg, #f8e4c9 0%, #fefaf4 100%);
+}
+
+.produtos {
+  padding: 80px 60px;
+  text-align: center;
+  background-color: #fefaf4;
+}
+
+.produtos h2 {
+  color: #3b2416;
+  margin-bottom: 40px;
+}
+
+.grid-produtos {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-top: 4px solid #f8e4c9;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.item h3 {
+  color: #3b2416;
+  margin-bottom: 10px;
+}
+
+.item p {
+  color: #666;
+  margin: 10px 0;
+}
+
+.preco {
+  color: #3b2416;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.btn-comprar {
+  background-color: #3b2416;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  width: 100%;
+}
+
+.btn-comprar:hover {
+  background-color: #2a1a10;
+}
+
+.depoimentos {
+  padding: 60px;
+  background-color: white;
+  text-align: center;
+}
+
+.depoimento-card {
+  background: #fefaf4;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-left: 4px solid #f8e4c9;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.sobre {
+  background-color: #fff;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.sobre h2 {
+  color: #3b2416;
+  margin-bottom: 30px;
+}
+
+.contato {
+  background-color: #fefaf4;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.contato h2 {
+  color: #3b2416;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+form button {
+  background-color: #f8e4c9;
+  color: #3b2416;
+  border: 2px solid #f8e4c9;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: transparent;
+  color: #3b2416;
+}
+
+footer {
+  background-color: #3b2416;
+  color: #f8e4c9;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.topo-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #3b2416;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.topo-btn:hover {
+  background-color: #2a1a10;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  header.topo {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+  }
+  
+  header ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .hero-texto h2 {
+    font-size: 2rem;
+  }
+  
+  .hero-imagem img {
+    height: 300px;
+  }
+  
+  .produtos, .sobre, .contato, .depoimentos {
+    padding: 40px 20px;
+  }
+  
+  .destaque {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .hero-imagem img {
+    height: 250px;
+  }
+}
